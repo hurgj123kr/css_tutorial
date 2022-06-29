@@ -1,6 +1,26 @@
-.box{
-    background: blue;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+.father {
+    display: flex;
+    /* Main Axis */
+    justify-content: space-around;
+    /* Cross Axis */
+    /* align-items: center; */
+    height: 50vh;
+    width: 100%;
+    /* flex-wrap wrap으로 설정되어있으면 flex-shrink가 안됨.. flex-grow는 wrap설정이 되있어도 잘됨. */
+    /* flex-wrap: wrap; */
+}
+
+.child{
+    flex-basis: 300px;
+    background: purple;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child:nth-child(2) {
+    background: black;
+    flex-grow: 0;
 }
