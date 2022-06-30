@@ -31,6 +31,12 @@ ex) grid-columns: [fuckyou-start] 100 [column-start]- 100
 grid 내장 함수인 repeat에서도 사용이간으함. repeat(4, [sexy-line] 100px) == grid-row = 100px [sexy-line] 100px [sexy-line] 와 같음.
 다만 repeat로 사용하면서 네이밍을 넣을경우 처읆이 존재하지않음. sexy-line 1 / sexy-line 3 은 가능하지만 sexy-line 2 / sexy-line은 불가능함 처음이 없기때문에 2번째부터 시작함.
 
+.item: nth_child(odd)
+    odd(홀수)
+    형제 요소에서 홀수번째(1, 3, 5, ...)인 요소를 나타냅니다.
+    even(짝수)
+    형제 요소에서 짝수번째(2, 4, 6, ...)인 요소를 나타냅니다.
+
 - [x] grid-template-columns
 - [x] grid-template-rows
 - [x] grid-column-gap
@@ -42,9 +48,9 @@ grid 내장 함수인 repeat에서도 사용이간으함. repeat(4, [sexy-line] 
 - [x] align-items
 - [x] justify-content
 - [x] align-content
-- [ ] grid-auto-columns
-- [ ] grid-auto-rows
-- [ ] grid-auto-flow
+- [x] grid-auto-columns
+- [x] grid-auto-rows
+- [x] grid-auto-flow
 - [x] grid-column-start
 - [x] grid-column-end
 - [x] grid-row-start
@@ -56,7 +62,8 @@ grid 내장 함수인 repeat에서도 사용이간으함. repeat(4, [sexy-line] 
 
 ### Keywords & Functions:
 
-- [ ] repeat
+- [x] repeat
+- [x] fr
 - [ ] min-content
 - [ ] max-content
 - [ ] minmax
