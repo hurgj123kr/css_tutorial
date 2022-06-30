@@ -2,29 +2,25 @@
     display: grid;
     gap: 10px;
     height: 50vh;
-    grid-template:
-    [header-start]"header header header header"1fr [header-end] 
-    [content-start]"content content content nav" 2fr [content-end]
-    [footer-start]"footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center end;
+
 }
 
 .header {
     background-color:darkorchid;
-    grid-area: header;
 }
 
 .content {
     background-color: #A396B1;
-    grid-area: content;
 }
 
 .nav {
     background-color: #FBD2C8;
-    grid-area: nav;
 }
 
 .footer {
     background-color: #37306A;
-    grid-area: footer;
-    /* grid-column: 1 / 5 == span 4 or 1 / -1*/
+    color: white;
 }
