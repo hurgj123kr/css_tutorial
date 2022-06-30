@@ -1,11 +1,11 @@
 .grid {
     display: grid;
+    background-color: gray;
     gap: 10px;
-    height: 50vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    place-items: center end;
-
+    height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    place-content: space-evenly space-evenly;
 }
 
 .header {
