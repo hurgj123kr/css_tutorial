@@ -38,8 +38,8 @@ grid 내장 함수인 repeat에서도 사용이간으함. repeat(4, [sexy-line] 
 - [x] grid-gap
 - [x] grid-template-areas
 - [x] grid-template
-- [ ] justify-items
-- [ ] align-items
+- [x] justify-items
+- [x] align-items
 - [ ] justify-content
 - [ ] align-content
 - [ ] grid-auto-columns
