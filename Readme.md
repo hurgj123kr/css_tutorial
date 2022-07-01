@@ -57,18 +57,18 @@ grid 내장 함수인 repeat에서도 사용이간으함. repeat(4, [sexy-line] 
 - [x] grid-row-end
 - [x] grid-column
 - [x] grid-row
-- [ ] justify-self
-- [ ] align-self
+- [x] justify-self
+- [x] align-self
 
 ### Keywords & Functions:
 
 - [x] repeat
 - [x] fr
-- [ ] min-content
-- [ ] max-content
-- [ ] minmax
-- [ ] auto-fit
-- [ ] auto-fill
+- [x] min-content
+- [x] max-content
+- [x] minmax
+- [x] auto-fit
+- [x] auto-fill
 
 ## SCSS:
 

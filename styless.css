@@ -1,11 +1,9 @@
 .grid {
     display: grid;
     gap: 10px;
-    height: 100vh;
-    grid-template-columns: repeat(10, 100px);
-    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(20px, max-content));
     grid-auto-rows: 100px;
-    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .item:nth-child(odd){
@@ -18,20 +16,10 @@
     color: white;
 }
 
-/* 
-.header {
-    background-color:darkorchid;
-}
-
-.content {
-    background-color: #A396B1;
-}
-
-.nav {
-    background-color: #FBD2C8;
-}
-
-.footer {
-    background-color: #37306A;
-    color: white;
-} */
+/* .grid:first-child{ */
+    /* grid-template-columns: repeat(5, minmax(100px,1fr)); */
+/* } */
+/*  */
+/* .grid:last-child{ */
+    /* grid-template-columns: repeat(5, minmax(100px,1fr)); */
+/* } */
