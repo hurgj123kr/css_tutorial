@@ -4,7 +4,6 @@ import minify from "gulp-csso";
 import autoprefixer from "gulp-autoprefixer";
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
-
 const sass = gulpSass(dartSass);
 
 const routes = {
@@ -18,6 +17,7 @@ const routes = {
 const styles = () => {
   return gulp
   .src(routes.css.src)
+  .pipe(sass().on('error', sass.logError))
   .pipe(
     autoprefixer({
       flexbox: true,
