@@ -1,12 +1,16 @@
-@import "veriable";
+@import "_veriable";
+@import "_minis";
 
-h2{
-    color: $bg;
+a {
+    margin-bottom: 10px;
+    &:nth-child(odd){
+       @include link(brown);
+    }
+    &:nth-child(even){
+        @include link(green);
+    }
 }
+    
+    
 
-.box{
-    margin-top: 20px;
-    h2{
-        color: black;
-  }
-}
+
