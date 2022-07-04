@@ -1,14 +1,15 @@
-@import "_veriable";
-@import "_minis";
+@import "_buttons";
 
-a {
-    margin-bottom: 10px;
-    &:nth-child(odd){
-       @include link(brown);
-    }
-    &:nth-child(even){
-        @include link(green);
-    }
+a{
+    @extend %button;
+    text-decoration: none;
+
+
+}
+button{
+    @extend %button;
+    border: none;
+
 }
     
     

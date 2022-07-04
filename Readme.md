@@ -76,5 +76,5 @@ grid 내장 함수인 repeat에서도 사용이간으함. repeat(4, [sexy-line] 
 - [x] Nesting
 - [ ] Partials
 - [x] Mixins
-- [ ] Extend
+- [x] Extend
 - [ ] Responsive
