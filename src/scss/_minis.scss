@@ -1,6 +1,30 @@
-@mixin link($color){
-    text-decoration: none;
-    display: block;
-    color : $color;
+// @mixin link($color){
+    // text-decoration: none;
+    // display: block;
+    // color : $color;
+// }
+$miniphone : 320px;
+$maxiphone : 425px;
+$mintablet : 768px;
+$maxtablet : 1023px;
+
+@mixin responsive($device){
+    @if $device == 'iphone'{
+@media screen and (min-width: $miniphone) and (max-width: $maxiphone) {
+    @content;
+}
+    }@else if $device =='tablet'{
+@media screen and (min-width:$mintablet) and (max-width:$maxtablet) {
+    @content;
+}
+    }@else if $device == 'iphone-l'{
+@media screen and (max-width:$miniphone) and (max-width:$miniphone)  and (orientation: landscape){
+    @content;
+}
+    }@else if $device == 'ipad-l'{
+    @media screen and (min-width:$mintablet) and (max-width:$maxtablet) and (orientation: landscape) {
+        @content;
+     }    
+    }
 }
 
