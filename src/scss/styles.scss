@@ -1,20 +1,109 @@
-@import "_minis";
+@import "_veriable";
+@import "reset";
 
-h1{
-    color: red;
-    @include responsive("iphone"){
-        color: green;
+*{
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    // flex: 3 50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+            Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #F0F1F1;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $fixedWidth;
+    height: 100%;
+    padding: 150px;
+    padding: 10vh 0 72px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $red;
+    h1 {
+        font-size:72px;
+        width: 50%;
+        text-transform: uppercase;
+        letter-spacing:5px;
     }
-
-    @include responsive("iphone-l"){
-        color: blue;
-        font-size: 60px;
+    h3 {
+        width: 62%;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.4;
+        margin-top: 55px;
+        margin-bottom: 25px;
     }
-
-    @include responsive("tablet"){
-        background-color: green;
+    p {
+        width: 60%;
+        text-align: justify;
+        font-weight: 300;
+        font-size: 15px;
+        margin-bottom: 30px;
+        line-height: 1.4;
+    }
+    .navigation {
+        nav{
+            width: 65%;
+            display:flex;
+            flex-wrap: wrap;
+            color: black;
+        }
+        a{
+            margin-right: 10px;
+            font-size: 13.5px;
+            color: black;
+            opacity: 0.5;
+            text-decoration: none;
+            padding-bottom: 1px;
+            box-shadow: 0 1px 0 rgb(0 0 0 /60%);
+            margin-bottom: 20px;
+            &:hover {
+                opacity: 1;
+           }
+        p{
+            width: 50%;
+        }
+        }
     }
 }
-    
+
+main {
+    margin-left: $fixedWidth;
+    .movie {
+        background-color: $red;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        .wrapper {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            .movie_header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 25px;
+                h4 {
+                    font-size: 32px;
+                    text-transform: uppercase;
+                }
+                h5 {
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
 
 
