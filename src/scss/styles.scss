@@ -75,7 +75,15 @@ body {
 main {
     margin-left: $fixedWidth;
     .movie {
-        background-color: $red;
+        background: linear-gradient(
+            to bottom,
+            rgb(0,0,0 , 0.1) 5%,
+            transparent,
+            transparent,
+            transparent,
+            transparent
+        )
+        $red;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -101,6 +109,7 @@ main {
         }
         img{
             width: 100%;
+            box-shadow: 0 80px 80px -80px #000;
         }
     }
 }
