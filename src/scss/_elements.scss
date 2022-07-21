@@ -1,0 +1,19 @@
+%titles {
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+%btn {
+    text-decoration: none;
+    color: inherit;
+    border: $border;
+    padding: 10px 30px;
+    font-weight: 500;
+    transition: background-color 0.2s linear;
+    border-radius: 99px;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
